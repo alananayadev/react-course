@@ -4,11 +4,22 @@ import '../css/styles.css'
 
 class Header extends Component {
 
-    inputChangeHandler(event) {
-        console.log(event.target.value)
+    constructor(props){
+        super(props);
+
+        this.state = {
+            keywords: ''
+        }
+    }
+
+    inputChangeHandler = (event) => {
+        this.setState({
+            keywords: event.target.value
+        })
     }
     
     render(){
+
         return (
             <header>
                 <div className='logo' onClick={this.onclickHandler}>Logo</div>
