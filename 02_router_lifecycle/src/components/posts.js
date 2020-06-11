@@ -2,13 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 
 const Posts = () => {
-    return (
-        <div>
-            <Link to="/posts/1">post 1</Link><br/>
-            <Link to="/posts/2">post 2</Link><br/>
-            <Link to="/posts/3">post 3</Link><br/>
-        </div>
-    )
+
+    // const list = ids.map(item => {
+    //     return(
+    //         <span key={item.id}>
+    //             <Link to={item.id}></Link><br />
+    //         </span>
+    //     )
+    // })
+
+    return [
+        <div key='1'>Hello</div>,
+        <div key = '2'>i am </div>,
+        <div key = '3'> a react app</div>
+    ]
 }
 
 export default Posts
