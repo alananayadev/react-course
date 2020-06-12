@@ -6,18 +6,16 @@ import Auth from '../HOC/auth';
 
 const Profile = (props) => {
 
-    const redir = () => {
-        props.history.push('/')
-    }
-
     return (
-        <Card>
-            <Link to={{
-                pathname: `${props.match.url}/posts`
-            }}>Take me to /profile/posts</Link>
-            
-        </Card>
+        <Auth>
+            <Card>
+                <Link to={{
+                    pathname: `${props.match.url}/posts`
+                }}>Take me to /profile/posts
+                </Link>
+            </Card>
+        </Auth>
+        
     )
 }
-
-export default Profile
+export default Profile;
