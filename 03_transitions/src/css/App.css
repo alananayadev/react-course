@@ -75,7 +75,7 @@
 ========================================*/
 
 .square {
-  background: red;
+  background: yellow;
   height:100px;
   opacity:1;
   transition: all 2s ease;
@@ -87,11 +87,11 @@
 }
 
 .square.square-entered {
-  background: blue;
+  background: green;
 }
 
 .square.square-exiting {
-  background: green
+  background: red
 }
 
 .square.square-exited {
